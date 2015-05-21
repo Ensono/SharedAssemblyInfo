@@ -147,11 +147,11 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion(`"1.0.*`")]
 [assembly: AssemblyVersion(`"1.0.0.0`")]
+[assembly: AssemblyInformationalVersion(`"From Source`")]
 [assembly: AssemblyFileVersion(`"1.0.0.0`")]"
 
   Set-Content -Path $SharedAssemblyInfoFile -Value $template -Encoding UTF8;
   }
 }
-
 
 Initialize-SharedAssemblyInfo -RemoveComments
